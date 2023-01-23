@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <video src="imagenes/Medusa.mp4" autoplay="true" muted="true" loop="true" ></video>
+    <header class="header">
+        <img class="logo" src="imagenes/aluraLogo.png" alt="">
+        <h2>Encriptador y Desencriptador</h2>
+    </header>
+
+    <main>
+        
+        <section>
+
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            
+
+            <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+            <div>
+                <h6 class="informacion">*Solo letras minúsculas y sin acento</h6>
+            </div>
+
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar" id="btn-copiar" onclick="">Copiar</button>
+            </div>
+        </section>
+
+        <div class="lugar">
+            <canvas id="lienzo" width="240" height="500"></canvas>
+        </div>
+        <div class="lugar2">
+            <canvas id="lienzo2" width="240" height="500"></canvas>
+        </div>
+        
+        <div class="mensajecopiado"><p>¡Copiado al Portapapeles!</p></div>
+
+    </main>
+
+    <footer>
+        <p>Hecho por Leonel Hernández &#169</p>
+        <a href="https://www.linkedin.com/in/leonelantoniohernandezperez/"><img src="imagenes/linkedin.png" alt=""></a> 
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
